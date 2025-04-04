@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Input, TextArea } from "../ui";
 import axios from "axios";
 
@@ -46,11 +45,23 @@ function Modal({ setIsModal, isModal, className }) {
           <label>Select your role:</label>
           <div className="flex space-x-6 mt-2">
             <div className="flex space-x-1">
-              <input type="radio" name="role" id="owner" required />
+              <input
+                type="radio"
+                name="role"
+                value="owner"
+                id="owner"
+                required
+              />
               <label className="">Owner</label>
             </div>
             <div className="flex space-x-1">
-              <input type="radio" name="role" id="company" required />
+              <input
+                type="radio"
+                name="role"
+                value="company"
+                id="company"
+                required
+              />
               <label className="">Company</label>
             </div>
           </div>
@@ -72,11 +83,12 @@ function Modal({ setIsModal, isModal, className }) {
           <Input
             type={"tel"}
             placeholder={"+998 XX XXX XX XX"}
-            pattern={"+998[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}/v"}
+            pattern={"^+998s?d{2}s?d{3}s?d{2}s?d{2}$"}
             defaultValue={"+998 "}
             inputMode={"numeric"}
             name={"phone"}
           />
+
           <TextArea name={"text"} />
           <Button
             label={"send message"}

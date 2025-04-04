@@ -13,7 +13,7 @@ function Input({
       <input
         type={type}
         name={name}
-        className="border-1 border-black/30 w-full py-2 px-3 rounded-md focus-visible:border-blue-500 focus-within:border-1"
+        className="border-1 border-black/30 w-full py-2 px-3 rounded-md focus-visible:border-blue-500 focus-within:border-1 bg-white"
         placeholder={placeholder}
         pattern={pattern}
         defaultValue={defaultValue}

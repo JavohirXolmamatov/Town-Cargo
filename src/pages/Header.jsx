@@ -28,10 +28,10 @@ function Header() {
               <a href="#services">Our Services</a>
             </li>
             <li>
-              <a href="#services">Why Us</a>
+              <a href="#whyUs">Why Us</a>
             </li>
             <li>
-              <a href="#services">News</a>
+              <a href="#news">News</a>
             </li>
             <li>
               <a href="#contact">Contacts</a>
@@ -63,7 +63,7 @@ function Header() {
         <nav
           className={`${
             isOpen ? "translate-x-0" : "translate-x-full"
-          } absolute transition-transform transform md:hidden flex flex-col bg-[#172646]  text-white w-[200px] h-screen top-[80px] right-0 flex items-start p-6 justify-top `}
+          } absolute transition-transform transform md:hidden flex flex-col bg-[#172646]  text-white w-[200px] h-screen top-[80px] right-0  items-start p-6 justify-top `}
         >
           <ul className="flex flex-col space-y-3">
             <li className="hover:text-blue-500 transition-transform transform">

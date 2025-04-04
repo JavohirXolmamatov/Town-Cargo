@@ -25,7 +25,7 @@ export default function App() {
         }}
         // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper h-[650px] w-full "
+        className="mySwiper h-[650px] md:w-full w-9/10 mx-auto"
       >
         <SwiperSlide className="">
           <div
