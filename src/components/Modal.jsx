@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Button, Input, TextArea } from "../ui";
 import axios from "axios";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 function Modal({ setIsModal, isModal, className }) {
   const { t } = useTranslation();
@@ -22,6 +23,17 @@ function Modal({ setIsModal, isModal, className }) {
     })
       .then(() => {
         console.log("Succesfully message");
+        toast.success("Succesfully message!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
       })
       .catch((e) => {
         console.log(error);
@@ -32,6 +44,7 @@ function Modal({ setIsModal, isModal, className }) {
     e.target.email.value = "";
     e.target.phone.value = "";
     e.target.text.value = "";
+    setIsModal(!isModal);
   };
   const handleClose = (e) => {
     e.preventDefault();

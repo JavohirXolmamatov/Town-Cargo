@@ -6,7 +6,7 @@ function Maps() {
     <MapContainer
       center={[41.3111, 69.2797]}
       zoom={13}
-      className="md:w-full md:h-[400px] h-[200px]"
+      className="md:w-full md:h-[400px] h-[200px] z-0"
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={[41.3111, 69.2797]}>

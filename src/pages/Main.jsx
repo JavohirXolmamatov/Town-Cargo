@@ -1,4 +1,4 @@
-import { Cards, Maps, Modal, Swiperr } from "../components/index";
+import { Alert, Cards, Maps, Modal, Swiperr } from "../components/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Button, Input, TextArea } from "../ui/index";
@@ -30,6 +30,7 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { useTranslation } from "react-i18next";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 
 function Main() {
   const { t } = useTranslation();
@@ -64,8 +65,19 @@ function Main() {
     })
       .then(() => {
         console.log("Succesfully message");
+        toast.success("Succesfully message!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
       })
-      .catch((e) => {
+      .catch((error) => {
         console.log(error);
       });
 
@@ -78,6 +90,19 @@ function Main() {
 
   return (
     <div className="mt-[80px] w-full">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
       {/* Home section */}
       <section className="h-165 w-full" id="home">
         <div>
@@ -158,7 +183,9 @@ function Main() {
       <section className="w-full bg-blue-950 md:h-[500px] pb-10" id="whyUs">
         <div className="md:w-8/10 w-8/10 mx-auto text-white pt-20">
           <div className="w-full flex flex-col items-center mb-15">
-            <h1 className="text-4xl font-bold uppercase">{t("whyUs.title")}</h1>
+            <h1 className="text-4xl font-bold uppercase text-center">
+              {t("whyUs.title")}
+            </h1>
             <span className="block w-[70px] h-[3px] mt-4 bg-blue-500"></span>
           </div>
           <div className="grid md:grid-cols-3 items-center justify-center text-center gap-8">

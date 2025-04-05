@@ -1,9 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { logo } from "../assets/index.js";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const i18nextLng = localStorage.getItem("i18nextLng");
+  const menuRef = useRef(null); // menyuni nazorat qilish uchun ref
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(!isOpen);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const handleSelect = (e) => {
     const selectedLanguage = e.target.value;
@@ -15,11 +31,7 @@ function Header() {
     <header className="w-full max-h-[80px] bg-[#172646] text-white font-bold fixed top-0 z-10">
       <div className="flex w-9/10 mx-auto h-[80px] justify-between items-center p-4 ">
         <div className="flex items-center space-x-2">
-          <img
-            src="../../public/logo-cargo.png"
-            alt="logo"
-            className="h-10 w-10"
-          />
+          <img src={logo} alt="logo" className="h-10 w-10" />
           <span className="uppercase font-bold">
             <a href="#home">town cargo</a>
           </span>
@@ -28,9 +40,7 @@ function Header() {
         <nav className="hidden md:flex">
           <ul className="flex space-x-10">
             <li className="hover:text-blue-500 transition-all duration-300 transform">
-              <a href="#home" className="">
-                {t("header.home")}
-              </a>
+              <a href="#home">{t("header.home")}</a>
             </li>
             <li className="hover:text-blue-500 transition-all duration-300 transform">
               <a href="#about">{t("header.about")}</a>
@@ -82,9 +92,16 @@ function Header() {
         <nav
           className={`${
             isOpen ? "translate-x-0" : "translate-x-full"
-          } absolute transition-transform transform md:hidden flex flex-col bg-[#172646]  text-white w-[200px] h-screen top-[80px] right-0  items-start p-6 justify-top `}
+          } absolute transition-transform transform md:hidden z-999 flex flex-col bg-[#172646]  text-white w-[200px] h-screen top-[80px] right-0  items-start p-6 justify-top `}
         >
-          <ul className="flex flex-col space-y-3">
+          <ul
+            className="flex flex-col space-y-3"
+            ref={menuRef}
+            onClick={(e) => {
+              // console.log(e.target.name);
+              setIsOpen(!isOpen);
+            }}
+          >
             <li className="hover:text-blue-500 transition-all duration-300 transform">
               <a href="#home">Home</a>
             </li>
