@@ -1,7 +1,15 @@
 import { Header, Main, Footer } from "./pages/index";
 import { FaAngleLeft } from "react-icons/fa";
+import "./i18n";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 function App() {
+  const { i18n } = useTranslation();
+  const i18nextLng = localStorage.getItem("i18nextLng");
+  useEffect(() => {
+    i18n.changeLanguage(i18nextLng);
+  }, []);
   return (
     <div className="relative">
       <Header />

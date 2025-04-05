@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Button, Input, TextArea } from "../ui";
 import axios from "axios";
 
 function Modal({ setIsModal, isModal, className }) {
+  const { t } = useTranslation();
   const hadleMessage = (e) => {
     e.preventDefault();
     const token = "7593360870:AAGzGobs9r4Mcux4F6TsMzG7064F1xXk9iQ";
@@ -42,7 +44,7 @@ function Modal({ setIsModal, isModal, className }) {
           className="text-black/70 text-md relative"
           onSubmit={hadleMessage}
         >
-          <label>Select your role:</label>
+          <label>{t("modal.selectRole")}</label>
           <div className="flex space-x-6 mt-2">
             <div className="flex space-x-1">
               <input
@@ -52,7 +54,7 @@ function Modal({ setIsModal, isModal, className }) {
                 id="owner"
                 required
               />
-              <label className="">Owner</label>
+              <label className="">{t("modal.owner")}</label>
             </div>
             <div className="flex space-x-1">
               <input
@@ -62,24 +64,20 @@ function Modal({ setIsModal, isModal, className }) {
                 id="company"
                 required
               />
-              <label className="">Company</label>
+              <label className="">{t("modal.company")}</label>
             </div>
           </div>
           <Input
-            placeholder={"Your first name"}
+            placeholder={t("modal.firstName")}
             pattern={"[A-Za-zЎҚҒҲа-яА-ЯёЁs]+"}
             name={"firstName"}
           />
           <Input
-            placeholder={"Your last name"}
+            placeholder={t("modal.lastName")}
             pattern={"[A-Za-zЎҚҒҲа-яА-ЯёЁs]+"}
             name={"surname"}
           />
-          <Input
-            type={"email"}
-            placeholder={"Your email address"}
-            name={"email"}
-          />
+          <Input type={"email"} placeholder={t("modal.email")} name={"email"} />
           <Input
             type={"tel"}
             placeholder={"+998 XX XXX XX XX"}
@@ -89,9 +87,9 @@ function Modal({ setIsModal, isModal, className }) {
             name={"phone"}
           />
 
-          <TextArea name={"text"} />
+          <TextArea name={"text"} placeholder={t("modal.message")} />
           <Button
-            label={"send message"}
+            label={t("modal.send")}
             type={"submit"}
             className={
               "bg-blue-500 px-6 py-2 rounded-xl text-white mt-3 text-center hover:bg-blue-600 transition-all duration-300 ease-in-out "

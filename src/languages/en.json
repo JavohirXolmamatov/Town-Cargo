@@ -1,0 +1,84 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "service": "Our Services",
+    "whyUs": "Why Us",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "home": {
+    "slide1": {
+      "title": "Unlimited Delivery",
+      "description": "We help people save time, make their life better, exercising communications, both in business and in private life."
+    },
+    "slide2": {
+      "title": "A partnership based on trust.",
+      "description": "We strive to ensure that our services have become a benchmark of quality in the field of the delivery."
+    },
+    "slide3": {
+      "title": "Comfortable Payment System.",
+      "description": "Payment for services is made by credit or advanced system. A form of payment is in the discretion of the customer."
+    }
+  },
+  "about": {
+    "title": "company at a glance",
+    "paragraph1": "Our transportation company with 30 years of experience is you best choice for shipping cargo of any size, storage, packing or delivering wares to your customers. Our professional employees will take care of your goods, whenever you send them.",
+    "paragraph2": "You are granted complete control over the process of delivery by phone or by our mobile app. Your freight is tracked every step of the way. We provide a high standard of shipping, regardless of its volume. If your company needs to establish a supply chain, we have prepared several readymade solutions with flexible pricing rates for you. Our urgent cargo services offer defined time frames for convenience of your business. Our supply chain services include shipping, warehousing, packaging, quality control and distribution.",
+    "button": "contact us"
+  },
+  "modal": {
+    "selectRole": "Select your role:",
+    "owner": "Owner",
+    "company": "Company",
+    "firstName": "Your first name",
+    "lastName": "Your last name",
+    "email": "Your email address",
+    "phone": "+998 XX XXX XX XX",
+    "message": "Message",
+    "send": "send message"
+  },
+  "services": {
+    "title": "our services",
+    "description": "Our transportation company has been offering a vast set of reliable solutions for businesses and individuals all over the world since our establishment.",
+    "cards": {
+      "transportation": "Transportation",
+      "logistics": "Logistcs",
+      "towing": "Towing service",
+      "leasing": "Maintenance Leasing",
+      "distribution": "Distribution Services",
+      "storage": "Storage"
+    }
+  },
+  "whyUs": {
+    "title": "WHY CHOOSE US",
+    "cards": {
+      "service": {
+        "title": "Best service",
+        "desc": "Our mission is to attract and retain customers by providing Best in Class transportation solutions and fostering a profitable, disciplined culture of safety, service, and trust."
+      },
+      "reputation": {
+        "title": "Reputation",
+        "desc": "We have established a strong presence in the transportation industry. Our award-winning services earn a reputation for quality and excellence that few can rival."
+      },
+      "safety": {
+        "title": "Safety & Security",
+        "desc": "Safety for our employees, customers and motoring public will always remain our primary focus in all the policies, procedures and programs that govern our business."
+      }
+    }
+  },
+  "news": {
+    "latest_news": "Latest News",
+    "town_cargo_expansion": "Town Cargo Expands to New Routes!",
+    "how_to_reduce_costs": "How to Reduce Transportation Costs in 2025",
+    "behind_the_wheel": "Behind the Wheel: A Day in the Life of a Town Cargo Driver",
+    "date_time": "February 5, 2025, 10:00 AM",
+    "town_cargo_expansion_description": "Town Cargo is excited to announce the expansion of our trucking routes! We are now covering more regions to ensure faster and more efficient deliveries. Our commitment to reliable logistics continues to grow as we reach new destinations.",
+    "reduce_costs_description": "Looking to optimize your supply chain? Our logistics experts share five key strategies to cut down transportation costs while maintaining fast and secure deliveries. Read on to discover how smart planning and route optimization can benefit your business.",
+    "behind_the_wheel_description": "Ever wondered what it’s like to be a professional truck driver? Take a journey with one of our experienced drivers as they navigate long highways, manage schedules, and ensure your goods arrive safely.",
+    "our_partners": "Our Partners"
+  },
+  "contact": {
+    "title": "Contact form"
+  }
+}

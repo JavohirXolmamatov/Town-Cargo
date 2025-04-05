@@ -1,0 +1,84 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "service": "Xizmatlarimiz",
+    "whyUs": "Nega biz?",
+    "news": "Yangiliklar",
+    "contact": "Bog‘lanish"
+  },
+  "home": {
+    "slide1": {
+      "title": "Cheksiz yetkazib berish",
+      "description": "Biz odamlarning vaqtini tejash, hayotini yaxshilash va biznesda ham, shaxsiy hayotda ham muloqotni rivojlantirishga yordam beramiz."
+    },
+    "slide2": {
+      "title": "Ishonch asosidagi hamkorlik.",
+      "description": "Biz xizmatlarimiz yetkazib berish sohasida sifat mezoniga aylanishi uchun intilamiz."
+    },
+    "slide3": {
+      "title": "Qulay toʻlov tizimi.",
+      "description": "Xizmatlar uchun toʻlov kredit yoki oldindan toʻlov tizimi orqali amalga oshiriladi. Toʻlov shakli mijoz xohishiga koʻra tanlanadi."
+    }
+  },
+  "about": {
+    "title": "kompaniyaga umumiy nazar",
+    "paragraph1": "30 yillik tajribaga ega bo'lgan transport kompaniyamiz har qanday o'lchamdagi yuklarni yetkazib berish, saqlash, qadoqlash yoki mijozlaringizga yetkazish bo‘yicha eng yaxshi tanlovdir. Bizning professionallar jamoamiz siz yuborgan tovarlaringizga g'amxo'rlik qiladi.",
+    "paragraph2": "Siz yuk yetkazib berish jarayonini telefon yoki mobil ilova orqali to'liq nazorat qilishingiz mumkin. Yukingiz har bir bosqichda kuzatib boriladi. Biz yuk hajmiga qaramasdan yuqori darajadagi xizmatni taqdim etamiz. Agar kompaniyangiz ta'minot zanjirini tashkil etishi kerak bo‘lsa, biz mos narxlarda tayyor echimlarni taklif qilamiz. Zudlik bilan yetkazish xizmatlarimiz biznesingiz uchun aniq vaqt doiralarini taklif etadi. Ta'minot xizmatlarimiz yuk tashish, omborxona, qadoqlash, sifat nazorati va tarqatishni o'z ichiga oladi.",
+    "button": "bog'lanish"
+  },
+  "modal": {
+    "selectRole": "Rolingizni tanlang:",
+    "owner": "Egasiman",
+    "company": "Kompaniyaman",
+    "firstName": "Ismingiz",
+    "lastName": "Familiyangiz",
+    "email": "Email manzilingiz",
+    "phone": "+998 XX XXX XX XX",
+    "message": "Xabar",
+    "send": "xabar yuborish"
+  },
+  "services": {
+    "title": "xizmatlarimiz",
+    "description": "Bizning transport kompaniyamiz tashkil topganidan beri butun dunyo bo'ylab biznes va shaxslar uchun ishonchli yechimlarni taqdim etib kelmoqda.",
+    "cards": {
+      "transportation": "Transport xizmati",
+      "logistics": "Logistika",
+      "towing": "Evakuator xizmati",
+      "leasing": "Texnik xizmat va ijarasi",
+      "distribution": "Taqsimot xizmatlari",
+      "storage": "Saqlash"
+    }
+  },
+  "whyUs": {
+    "title": "NEGA BIZNI TANLAYSIZ",
+    "cards": {
+      "service": {
+        "title": "Eng yaxshi xizmat",
+        "desc": "Bizning vazifamiz — eng yaxshi transport yechimlarini taqdim etish orqali mijozlarni jalb qilish va ularni saqlab qolish, xavfsizlik, xizmat va ishonch madaniyatini rivojlantirishdir."
+      },
+      "reputation": {
+        "title": "Obro‘",
+        "desc": "Biz transport sohasida kuchli mavqega egamiz. Mukofotlangan xizmatlarimiz sifat va mukammallik borasida yuqori obro‘ga ega."
+      },
+      "safety": {
+        "title": "Xavfsizlik va himoya",
+        "desc": "Xodimlarimiz, mijozlarimiz va boshqa yo‘lovchilar xavfsizligi har doim siyosatimiz va ish tartib-qoidalarimizda asosiy o‘rinda bo‘ladi."
+      }
+    }
+  },
+  "news": {
+    "latest_news": "So'nggi yangiliklar",
+    "town_cargo_expansion": "Town Cargo yangi yo'nalishlarga kengaymoqda!",
+    "how_to_reduce_costs": "2025 yilda transport xarajatlarini qanday kamaytirish mumkin",
+    "behind_the_wheel": "Volan orqasida: Town Cargo haydovchisining kunini kuzatish",
+    "date_time": "5-fevral, 2025, 10:00",
+    "town_cargo_expansion_description": "Town Cargo bizning yuk tashish yo'nalishlarimizning kengayishini e'lon qilishdan xursand! Endi biz tezroq va samaraliroq yetkazib berishni ta'minlash uchun ko'proq hududlarni qamrab oldik. Bizning ishonchli logistika sohasidagi majburiyatlarimiz yangi manzillarga yetib borishimiz bilan yanada kengaymoqda.",
+    "reduce_costs_description": "Ta'minot zanjirini optimallashtirmoqchimisiz? Bizning logistika mutaxassislarimiz tezkor va xavfsiz yetkazib berishni saqlab qolish bilan birga transport xarajatlarini kamaytirish uchun beshta asosiy strategiyani taqdim etadi. Bizning biznesingizga qanday foyda keltirishi mumkinligini bilib olish uchun o'qishni davom ettiring.",
+    "behind_the_wheel_description": "Kasbiy yuk mashinasi haydovchisi bo'lish nima ekanligini hech o'ylaganmisiz? Bizning tajribali haydovchilarimiz bilan uzoq yo'llarni bosib o'tib, jadvalni boshqarib, sizning tovarlaringizni xavfsiz yetkazib berishlarini ta'minlashda qanday hayot kechirishlarini kuzatib boring.",
+    "our_partners": "Bizning Hamkorlarimiz"
+  },
+  "contact": {
+    "title": "Bog‘lanish uchun"
+  }
+}

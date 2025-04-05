@@ -9,8 +9,11 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 export default function App() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Swiper
@@ -32,10 +35,9 @@ export default function App() {
             data-aos="zoom-in-up"
             className="flex flex-col justify-center items-center text-white text-center h-full md:w-[650px] mx-auto"
           >
-            <h1 className="text-6xl font-bold">Unlimited Delivery</h1>
+            <h1 className="text-6xl font-bold">{t("home.slide1.title")}</h1>
             <p className="text-xl font-medium mt-10">
-              We help people save time, make their life better, exercising
-              communications, both in business and in private life.
+              {t("home.slide1.description")}
             </p>
           </div>
         </SwiperSlide>
@@ -44,12 +46,9 @@ export default function App() {
             data-aos="zoom-in-up"
             className="flex flex-col justify-center items-center text-white text-center h-full md:w-[650px] mx-auto"
           >
-            <h1 className="text-6xl font-bold">
-              A partnership based on trust.
-            </h1>
+            <h1 className="text-6xl font-bold">{t("home.slide2.title")}</h1>
             <p className="text-xl font-medium mt-10">
-              We strive to ensure that our services have become a benchmark of
-              quality in the field of the delivery.
+              {t("home.slide2.description")}
             </p>
           </div>
         </SwiperSlide>
@@ -58,10 +57,9 @@ export default function App() {
             data-aos="zoom-in-up"
             className="flex flex-col justify-center items-center text-white text-center h-full md:w-[650px] mx-auto"
           >
-            <h1 className="text-6xl font-bold">Comfortable Payment System.</h1>
+            <h1 className="text-6xl font-bold">{t("home.slide3.title")}</h1>
             <p className="text-xl font-medium mt-10">
-              Payment for services is made by credit or advanced system. A form
-              of payment is in the discretion of the customer.
+              {t("home.slide3.description")}
             </p>
           </div>
         </SwiperSlide>
