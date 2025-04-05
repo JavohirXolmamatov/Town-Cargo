@@ -1,4 +1,4 @@
-import { Alert, Cards, Maps, Modal, Swiperr } from "../components/index";
+import { Cards, Maps, Modal, Swiperr } from "../components/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Button, Input, TextArea } from "../ui/index";

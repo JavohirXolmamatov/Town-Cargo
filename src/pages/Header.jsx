@@ -10,7 +10,7 @@ function Header() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsOpen(!isOpen);
+        setIsOpen(false);
       }
     };
 
@@ -98,8 +98,7 @@ function Header() {
             className="flex flex-col space-y-3"
             ref={menuRef}
             onClick={(e) => {
-              // console.log(e.target.name);
-              setIsOpen(!isOpen);
+              setIsOpen(false);
             }}
           >
             <li className="hover:text-blue-500 transition-all duration-300 transform">
